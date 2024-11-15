@@ -16,5 +16,5 @@
 49669/tcp open  unknown
                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Documents/Learning/PG/shenzi]
-└─$ cat ports | grep -oP '^\d+' | paste -sd, -
+└─$ cat ports | grep -oP '^\d+' | sort -n | uniq | paste -sd, -
 21,80,135,139,443,445,3306,5040,7680,49664,49665,49666,49667,49668,49669
